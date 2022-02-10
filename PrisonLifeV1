@@ -21,8 +21,3 @@ end)
 MainSection:NewSlider("JumpPower", "changes the humanoid jumppower", 250, 50, function (v)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 end)
-
-local Credits = Window:NewTab("Credits")
-local CreditsSection = Credits:NewSection("https://discord.gg/wATFePvFFB")
-CreditsSection:Section:NewLabel("made by erazias#0001")
-end)
