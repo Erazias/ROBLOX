@@ -51,10 +51,6 @@ MainSection:NewToggle("Buy all swords", "buys all swords", function(v)
     end
 end)
 
-print("successfully loaded erazias hub v1")
-wait(0.01)
-print("made by erazias#0001")
-
 local A_1 = "ERAWARE.CC #1 || UDqU8UP4bw"
 local A_2 = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
