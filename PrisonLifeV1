@@ -21,3 +21,11 @@ end)
 MainSection:NewSlider("JumpPower", "changes the humanoid jumppower", 250, 50, function (v)
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 end)
+
+local A_1 = "ERAWARE.CC #1 || UDqU8UP4bw"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+while true do
+wait(10)
+Event:FireServer(A_1, A_2)
+end
