@@ -22,6 +22,23 @@ MainSection:NewSlider("JumpPower", "changes the humanoid jumppower", 250, 50, fu
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
 end)
 
+function createSound(id, volume, parent)
+	assert(id, "sound id wasn't given")
+	id = tostring(id):gsub("%D", "") --only keeping the numbers
+	assert(id ~= "", "sound id isn't a number") 
+	volume = volume or 1.5 --0.5 is the default volume
+	parent = parent or workspace --workspace is the default parent
+	local Sound = Instance.new("Sound") 
+	Sound.SoundId = "rbxassetid://"..id 
+	Sound.Volume = volume 
+	Sound.Parent = parent 
+	return Sound 
+end
+
+local Sound = createSound("rbxassetid://7153945201")
+Sound.Looped = false
+Sound:Play()
+
 local A_1 = "ERAWARE.CC #1 || UDqU8UP4bw"
 local A_2 = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
