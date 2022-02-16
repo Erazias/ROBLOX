@@ -1248,10 +1248,29 @@ local Sound = createSound("rbxassetid://7153945201")
 Sound.Looped = false
 Sound:Play()
 
-local A_1 = "ERAWARE.CC #1 || UDqU8UP4bw"
-local A_2 = "All"
-local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
-while true do
-wait(30)
-Event:FireServer(A_1, A_2)
-end
+local Message = Instance.new("Message", workspace)
+Message.Text = "the 'eraware #1' chat message is disabled in this game due to a higher ban chance (7.5s)"
+wait(0.1)
+Message.Text = "the 'eraware #1' chat message is disabled in this game due to a higher ban chance (7.4s)"
+wait(0.1)
+Message.Text = "the 'eraware #1' chat message is disabled in this game due to a higher ban chance (7.3s)"
+wait(0.1)
+Message.Text = "the 'eraware #1' chat message is disabled in this game due to a higher ban chance (7.2s)"
+wait(0.1)
+Message.Text = "the 'eraware #1' chat message is disabled in this game due to a higher ban chance (7.1s)"
+wait(0.1)
+Message.Text = "the 'eraware #1' chat message is disabled in this game due to a higher ban chance (7s)"
+wait(1)
+Message.Text = "the 'eraware #1' chat message is disabled in this game due to a higher ban chance (6s)"
+wait(1)
+Message.Text = "the 'eraware #1' chat message is disabled in this game due to a higher ban chance (5s)"
+wait(1)
+Message.Text = "the 'eraware #1' chat message is disabled in this game due to a higher ban chance (4s)"
+wait(1)
+Message.Text = "the 'eraware #1' chat message is disabled in this game due to a higher ban chance (3s)"
+wait(1)
+Message.Text = "the 'eraware #1' chat message is disabled in this game due to a higher ban chance (2s)"
+wait(1)
+Message.Text = "the 'eraware #1' chat message is disabled in this game due to a higher ban chance (1s)"
+wait(0.5)
+Message:Destroy()
