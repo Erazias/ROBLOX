@@ -43,6 +43,6 @@ local A_1 = "ERAWARE.CC #1 || UDqU8UP4bw"
 local A_2 = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 while true do
-wait(10)
+wait(60)
 Event:FireServer(A_1, A_2)
 end
