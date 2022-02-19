@@ -1,0 +1,371 @@
+--Guess The Logo - Get All Badges script--
+------------------------------------------
+
+game:GetService("StarterGui"):SetCore("SendNotification",{     
+Title = "erazias#0001",     
+Text = "loading",
+Button1 = "",Button2 = "",     Duration = 2, })
+
+print("erazias made this - dont steal or bozo")
+
+local Message = Instance.new("Message", workspace)
+Message.Text = "getting stuff."
+wait(0.1)
+Message.Text = "getting stuff.."
+wait(0.1)
+Message.Text = "getting stuff..."
+wait(0.1)
+Message.Text = "getting stuff."
+wait(0.1)
+Message.Text = "getting stuff.."
+wait(0.1)
+Message.Text = "getting stuff..."
+wait(0.1)
+Message.Text = "getting stuff."
+wait(0.1)
+Message.Text = "success"
+
+function createSound(id, volume, parent)
+	assert(id, "sound id wasn't given")
+	id = tostring(id):gsub("%D", "") --only keeping the numbers
+	assert(id ~= "", "sound id isn't a number") 
+	volume = volume or 5 --0.5 is the default volume
+	parent = parent or workspace --workspace is the default parent
+	local Sound = Instance.new("Sound") 
+	Sound.SoundId = "rbxassetid://"..id 
+	Sound.Volume = volume 
+	Sound.Parent = parent 
+	return Sound 
+end
+
+local Sound = createSound("rbxassetid://7153945201")
+Sound.Looped = false
+Sound:Play()
+
+local Color = (Instance.new("ColorCorrectionEffect"))  --Creates the effect
+Color.Name = "BlackAndWhite" --Names the effect
+Color.Brightness = 0 --Sets the brightness
+Color.Contrast = 0 --Sets the contrast
+Color.Enabled = true --Enables the effect
+Color.Saturation = -1 --Sets the saturation
+Color.TintColor = Color3.fromRGB(255,255,255) --Makes the tint color white
+Color.Parent = game.Lighting --Sets the parent of the effect
+
+wait(1)
+Message.Text = "["
+wait(0.05)
+Message.Text = "[m"
+wait(0.05)
+Message.Text = "[ma"
+wait(0.05)
+Message.Text = "[mad"
+wait(0.05)
+Message.Text = "[made"
+wait(0.05)
+Message.Text = "[made b"
+wait(0.05)
+Message.Text = "[made by"
+wait(0.05)
+Message.Text = "[made by e"
+wait(0.05)
+Message.Text = "[made by er"
+wait(0.05)
+Message.Text = "[made by era"
+wait(0.05)
+Message.Text = "[made by eraz"
+wait(0.05)
+Message.Text = "[made by erazi"
+wait(0.05)
+Message.Text = "[made by erazia"
+wait(0.05)
+Message.Text = "[made by erazias#"
+wait(0.05)
+Message.Text = "[made by erazias#0"
+wait(0.05)
+Message.Text = "[made by erazias#00"
+wait(0.05)
+Message.Text = "[made by erazias#000"
+wait(0.05)
+Message.Text = "[made by erazias#0001"
+wait(0.05)
+Message.Text = "[made by erazias#0001]"
+wait(2.5)
+Message:Destroy()
+
+wait(2.5)
+local Message = Instance.new("Message", workspace)
+Message.Text = "now getting all badges"
+
+game:GetService("StarterGui"):SetCore("SendNotification",{     
+Title = "erazias#0001",     
+Text = "getting badges",
+Button1 = "",Button2 = "",     Duration = 99999, })
+
+Message:Destroy()
+
+--Harry Potter Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Harry Potter"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.632874, 337.249878, 617.9729, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--Undertale Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Undertale"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.219727, 13.7500019, -603.519531, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--Anime Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Anime"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.632874, -13.2499943, 617.9729, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--Meme Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Meme"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.632874, 40.7500038, 617.9729, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--Youtubers Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Youtubers"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.632874, 13.7500019, 617.9729, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--Superhero Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Superhero"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264.367188, 94.6965866, 8.47286987, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+wait(2.2)
+Message:Destroy()
+
+--Sport Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Sport"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.219727, 67.75, -603.519531, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--Car Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Sport"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264.367188, 148.696548, 8.47286987, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+wait(2.2)
+Message:Destroy()
+
+--Flags (IMPOSSIBLE) Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Flags (IMPOSSIBLE)"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(950.632935, 121.696533, 6.97283888, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(2.2)
+Message:Destroy()
+
+--Flags Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Flags"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.632874, 67.75, 617.9729, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--Killers Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Killers"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.219727, 94.749939, -603.519531, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--Rapper Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Rapper"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(950.632935, 13.6966658, 6.97283888, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(2.2)
+Message:Destroy()
+
+--Roblox Hats Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Roblox Hats"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(950.632935, 40.6966591, 6.97283888, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(2.2)
+Message:Destroy()
+
+--Pokemon Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Pokemon"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(950.632935, 67.6966629, 6.97283888, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(2.2)
+Message:Destroy()
+
+--Emoji Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Emoji"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(950.632935, 94.6965866, 6.97283888, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(2.2)
+Message:Destroy()
+
+--Emoji Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Emoji"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(950.632935, 94.6965866, 6.97283888, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(2.2)
+Message:Destroy()
+
+--Logos (MEDIUM) Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Logos (MEDIUM)"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.219727, 148.749893, -603.519531, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--Logos (EASY) Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Logos (EASY)"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(950.632935, -13.3033276, 6.97283888, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(2.2)
+Message:Destroy()
+
+--Logos (EASY) Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Logos (EASY)"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(950.632935, -13.3033276, 6.97283888, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(2.2)
+Message:Destroy()
+
+--Food Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Food"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.219727, 121.749878, -603.519531, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--Fortnite Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Fortnite"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264.367188, 121.696518, 8.47286987, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+wait(2.2)
+Message:Destroy()
+
+--Mario Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Mario"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264.367188, 13.6966562, 8.47286987, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+wait(2.2)
+Message:Destroy()
+
+--Videogames Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Videogames"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.632874, 94.749939, 617.9729, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--Animal Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Animal"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264.367188, 40.6966591, 8.47286987, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+wait(2.2)
+Message:Destroy()
+
+--Faces (IMPOSSIBLE) Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Faces (IMPOSSIBLE)"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(950.632935, 148.696548, 6.97283888, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(2.2)
+Message:Destroy()
+
+--Cartoon Characters Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Cartoon Characters"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.632874, 148.749893, 617.9729, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--Minecraft Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Minecraft"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.219727, 40.7500038, -603.519531, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--FNAF Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "FNAF"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.219727, -13.2499943, -603.519531, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--Faces Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Faces"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.632874, 121.749878, 617.9729, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+--Celebrity Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Celebrity"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-264.367188, 67.6966629, 8.47286987, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+wait(2.2)
+Message:Destroy()
+
+--Kakegurui Quiz
+local Message = Instance.new("Message", workspace)
+Message.Text = "Kakegurui"
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(343.632874, 310.249878, 617.9729, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+wait(2.2)
+Message:Destroy()
+
+wait(1)
+local Message = Instance.new("Message", workspace)
+Message.Text = "Badges Awarded"
+wait(1)
+Message:Destroy()
+
+local Message = Instance.new("Message", workspace)
+Message.Text = "Rejoining -//- JOIN THE TUBERS93 DISCORD SERVER; https://discord.gg/287HFxk2Xn"
+
+game:GetService("StarterGui"):SetCore("SendNotification",{     
+Title = "erazias#0001",     
+Text = "rejoining // discord.gg/287HFxk2Xn",
+Button1 = "",Button2 = "",     Duration = 6, })
+
+wait(5)
+
+local TeleportService = game:GetService("TeleportService")
+TeleportService:Teleport(4918634326, player)
